@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+    
+#title{
+
+color:gray;
+font-size:xx-large;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+ul {
+    text-align: left;
+    line-height: 1.5;
+    color: rgb(80, 79, 79);
+}   
+      
+ #imag-div{
+       grid-area: content;
+       justify-self: center;
+       }
+ #image{
+       max-width: 100%;
+       height: auto;
+       position: relative;
+       }
+ #image-caption{
+        margin: 15px 0 5px 0;
+    }
+    #tribute-info{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-style: normal;
+        padding-top: 10px;
+        padding-bottom: 20px;
+       
+
+    }
+    #tribute-link{
+        color:rgb(22, 72, 138);
+        font-size:medium;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+       
+    
+    }
+    .box{
+        padding-bottom: 10 px;
+        
+        background:lightgrey;
+        margin:  50px;
+      
+
+    }
+    #main{
+     padding-top:5px;
+    }
+   
+        
+           
+    @media (min-width: 400px){
+        .container{
+            
+            background-color: lightgray;
+            display: grid;
+            grid-gap: 1em;
+            grid-template-areas: "header header" "content content""footer footter";
+            justify-self: center;
+           
+
+        }
+        .item-header{
+            grid-area: header;
+            padding-top: 20px;
+            
+            
+        }
+        
+        
+        .item-content{
+            grid-area: content;
+             font-size: medium;
+            justify-self: center;
+            
+
+        }
+        
+        .item-footer{
+            grid-area: footer;
+            
+            
+        }
+    
+    
+</style>
+<body class="box">
+    
+  
+    <div class="item-header"> 
+        <img id="image" src="/home/sofia/practice-front/Image/encabezado.jpg"
+    </div>
+    
+        <div class="container" >
+            <div class="item-header">
+               <h2 id="title"> Frida kahlo</h2>
+            </div>
+        <main id="main"></main>
+          <div class="item-content">
+            <div  id="imag-div" >
+              <img id="image" src="/home/sofia/practice-front/Image/kahlo_frida.jpg" alt="" >
+              <figcaption id="image-caption">Retrato de Frida Kahlo, Tomada en Mexico 1932</figcaption>
+            <div id="tribute-info" >
+             <ul>
+                <li> <strong>1926</strong> -  Autoretrato con traje de terciopelo</li>
+               <li> <strong> 1927</strong> Retrato de Miguel</li>
+               <li> <strong>1928</strong> Retrato de Cristina</li>
+               <li> <strong>1929</strong> El tiempo vuelao</li>
+               <li> <strong>1931</strong> Frida y Diego</li>
+               <li> <strong>1932</strong> Henry Ford Hospital</li>
+               <li> <strong>1932</strong> Autoretrato</li>
+               <li> <strong>1932</strong> Mi nacimiento</li>
+               <li> <strong>1933</strong> New York</li>
+               <li> <strong>1933</strong> Autoretrato con Collar</li>
+               <li> <strong>1936</strong> Mis Padres,Abuelos y Yo</li>
+               <li> <strong>1937</strong> Recuerdo</li>
+               <li> <strong>1938</strong> Autoretrato Mono</li>
+               <li> <strong>1938</strong> Lo que el agua me dio</li>
+               <li> <strong>1939</strong> El suicidio de Dorothy Hale</li>
+               <li> <strong>1939</strong> Dos desnudos en un bosque</li>
+               <li> <strong>1939</strong> Las dos fridas</li>
+               <li> <strong>1940</strong> Autoretrato </li>
+               <li> <strong>1943</strong> Diego en mi pensamiento</li>
+               <li> <strong>1943</strong> Pensando en la muerte</li>
+               <li> <strong>1944</strong> La columna rota</li>
+               <li> <strong>1944</strong> Retrato de Rosita Morillo</li>
+               <li> <strong>1945</strong> Moises</li>
+              <li> <strong>1946</strong> Arbol de la Esperanza</li>
+             <li> <strong>1946</strong> El venado herido</li>
+             <li> <strong>1947</strong> Autorretrato pelo suelto</li>
+             <li> <strong>1949</strong> El abrazo de amor,El universo,La tierra</li>
+             <li> <strong>1949</strong> Diego y yo</li>
+             <li> <strong>1954</strong> Sandias</li>
+             <li> <strong>1954</strong> Autorretrato con Stalin</li>
+             <li> <strong>13 de julio de 1954</strong> Frida fallece en Coyoacan</li>
+           </ul>
+        </div> 
+      
+        </main>
+      
+    
+    </div>
+    
+    <div class="container">
+          <a class="item-footer" id="tribute-link" target="_blank" href="https://www.biografiasyvidas.com/biografia/k/kahlo.htm"> Ver Mas Informacion</a>
+      </div>
+       
+       
+        
+    </div>
+   
+</body>
+
+
+
+</html>
