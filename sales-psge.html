@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+ 
+<style>
+ @media (min-width: 400px){
+.body{
+
+  margin: 0;
+  padding: 0;
+ 
+}
+body::before {
+    content: '';
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( 115deg, rgba(241, 240, 234, 0.726), rgba(231, 211, 193, 0.7) ), url(/home/sofia/practice-front/Image/sales-page/calum-lewis-zG11yYuNc6U-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;}
+}
+#header{
+      width: 100%;
+      position: absolute;
+      height: 120px;
+      margin: 0;
+       
+      display: flex;
+     
+      align-items:flex-start;
+      
+
+}
+
+
+#header-img{
+     max-width: 125px;
+     height: auto;
+     margin-top: 0;
+
+}
+.item-titulo{
+   position: absolute;
+   margin-left: 115px;
+   font-size:medium;
+   font-style:oblique;
+   color: rgb(50, 102, 71);
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   align-self: center;
+   height: auto;
+  
+  
+   }
+   #nav-bar  {
+    height: auto;
+     position: absolute;
+     margin-left: 650px;
+     margin-right: 0px;
+     display:block;
+     padding: 0px;
+     justify-self:flex-end;
+     align-self:center;
+     
+     }
+nav li {
+     
+     list-style:none;
+     display:inline-block;
+     padding-right: 40px;
+     padding-left: 0;
+     text-align:justify;
+     }
+     a{ 
+       color:#7c5648;
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+       font-size: 25px;
+       font-style:oblique;
+       text-decoration: none;
+       }
+      a:hover{
+         color: rgb(50, 102, 71);
+        }
+        @media (min-width: 20vw){
+        .container{
+          display: flexbox;
+          
+            grid-gap: 1em;
+            grid-template-areas: "header" "content" "video" "precios";
+            
+            padding-bottom: 20px;
+            width: 100%;
+            position: absolute;
+            margin-top: 140px;
+           }
+           .item-header{
+            grid-area:header;
+            
+           
+           }
+           .item-content{
+             grid-area: content;
+             
+             align-items: flex-start;
+             
+             
+            }
+             .grid{
+              max-width: 100%;
+              padding: 1rem;
+              
+              display: grid;
+              grid-template-columns: 350px 1fr ;
+              grid-template-rows: 300px 300px 300px;
+               grid-gap: 1rem;
+               margin-left: 100px;
+               margin-right: 100px;
+               margin-top: 100px;
+               align-items: center;
+               
+              
+               
+
+             }
+             img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+             
+              border-radius: 5px;}
+
+              .zoom{
+                transition: transform 2s;
+              }
+              .zoom:hover{
+               transform: scale(2);
+                }
+             .item-a {
+               grid-row: 0 / 1;
+               padding: 5px;
+              }
+             
+              
+              
+              .item-b {
+                grid-row: 2 / 3;
+               
+                
+               }
+ 
+            .item-c {
+             grid-row: 3 / 4;
+             
+               }
+            
+           .item-video{
+             grid-area: video;
+            
+             
+             
+           }
+           .item-precios
+           {
+             grid-area: precios;
+             display: flex;
+            flex-wrap: wrap;
+             -moz-box-pack: center;
+             justify-content: center;
+            padding-top: 10px;
+            
+          
+
+           }
+    #title{
+
+      font-size:60px;
+      font-style:oblique;
+      color:#5f3d30;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align: center;
+     }
+
+     #form{
+      
+     padding-top: 5px;
+     
+     border-radius: .25rem;
+     padding: 2.5rem;
+    align-self: center;
+     padding-top: 20px;
+    position: relative;
+   
+    
+    
+     
+     }
+     .box{ 
+      
+      padding-top: 20px;
+      
+      
+     }
+     .email{
+     
+     height: 40px;
+     width: 350px;
+     border-radius: .25rem;
+     border-color:#7c5648;
+     margin: auto;
+     align-items: center;
+     display: block;
+     text-align: center;
+
+}
+#submit{
+    
+   
+    font-size:large;
+      font-style:oblique;
+      color:wheat;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align: center;
+      
+    
+}
+.botton{
+  
+    margin: auto;
+    height: 40px;
+     width: 150px;
+     border-radius: .25rem;
+     background-color:#7c5648;
+     cursor: pointer;
+     align-items: center;
+     display: block;
+     
+    
+}
+ }
+.texto
+{      margin-right: 30px;
+       margin-left: 30px;
+      font-size:25px;
+      font-style:oblique;
+      color:#5f3d30;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align: center;
+
+}
+hr{
+  margin-left: 450px;
+  margin-right: 450px;
+  opacity: 60%;
+
+}
+.video{ 
+  justify-content: center;
+  display: flex;
+  padding-bottom: 100px;
+
+}
+.txt{ 
+      font-size:20px;
+      font-style:oblique;
+      color:#5f3d30;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      text-align:justify;
+      
+}
+.coteiner-feria{
+  position: relative;
+cursor: pointer;
+width: 17em;
+min-height: 17em;
+padding: 1em;
+display: flex;
+-moz-box-pack: center;
+justify-content: center;
+-moz-box-align: center;
+align-items: center;
+-moz-box-orient: vertical;
+flex-direction: column;
+color: #5f3d30;
+font-weight: 400;
+border: tomato;
+
+
+
+}
+.service-num{
+
+  display: block;
+padding: .5em 1em;
+border-radius: 100%;
+border: 1px solid #5f3d30;
+transition: all 0.3s ease-out 0s;
+}
+
+.service-txt{
+text-align: center;
+font-size: large;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+</style>
+
+<body  id="body">
+
+
+   <header id="header">
+     <div >
+        <img id="header-img" src="/home/sofia/practice-front/Image/logo.png" alt="logo empresa taza con planta"></div>
+        <div class="item-titulo"><h1><em>Grupo Sano</em></h1> </div>
+        <nav id="nav-bar"> 
+          <ul>
+            <li><a target="_blank" href="" data-section="nosotros"><strong>Nosotros</strong> </a></li>
+            <li><a target="_blank" href="" data-section="equipo"><strong>Equipo</strong> </a></li>
+            <li><a target="_blank" href="" data-section="servicios"><strong>Servicios</strong>  </a></li>
+            <li><a target="_blank" href="" data-section="contacto"> <strong>Contacto</strong></a></li>
+           </ul>
+           </nav>
+   </header>
+
+    <div class="container">
+    
+     <div class="item-header"><h2 id="title"><strong>El Sabor de Mexico</strong></h2>
+     
+         <div>
+             <form id="form">
+               <section class="box"><input  class="email" type="email" Name="user_email" placeholder="Enter Your Email" required> </section>
+               <section class="box"><input id="submit"  class="botton" type="submit" value="Iniciar"> </section>
+             </form>
+        </div>
+
+        <div>
+        <p class="texto"> La comida mexicana está conformada por una serie de deliciosos platillos como cochinita pibil, pozoles, 
+          tortitas de ahuautle, etcétera. Sin embargo, la exquisitez de sabores tan ricos -y a veces muy picosos-, 
+          se debe a la combinación de ingredientes de origen prehispánico y europeo. ¡Conoce más de esta tradición!</p>
+
+        </div>   
+     </div>
+      
+       <div class="item-content">
+            <div class="grid">
+              <div class="item-a">
+              <img class="zoom" src="/home/sofia/practice-front/Image/sales-page/freestocks-B7DCLzrmUjY-unsplash.jpg">
+            </div>
+            <div> 
+              <p class="txt" > El paso de los años y la fusión que se ha dado, sobre todo con el país vecino del norte, ha traído famosos platillos como el Cabrito, la Barbacoa, la Machaca y las deliciosas tortillas de harina, 
+                que no faltan en la mesa de todos los mexicanos.</p>
+            </div>
+            <div class="item-b">
+              <img class="zoom"  src="/home/sofia/practice-front/Image/sales-page/roberto-carlos-roman-TS_g_856-CA-unsplash.jpg">
+            </div>
+            <div>
+              <p class="txt">La región central es integrada por Aguascalientes, Guanajuato, Querétaro, Ciudad de México, Estado de México, Morelos y Tlaxcala. En esta región encontramos los mixiotes, barbacoa y el chileatole, tamales, 
+                tacos al pastor y una inmensa variación de platillos provenientes de cada estado.
+              </p>
+            </div>
+            <div class="item-c">
+              <img class="zoom" src="/home/sofia/practice-front/Image/sales-page/waldemar-brandt-DHz8ZK5rw1E-unsplash.jpg">
+            </div>
+
+            <div>
+              <p class="txt">Ingredientes tropicales, fauna exótica y muy buen gusto: la gastronomía del sureste de México es un festival de sabores y sazones. Disfruta los platillos típicos del sureste en tu próxima visita a Villahermosa, Campeche, Mérida o Cancún. Cada que pruebes alguna de sus platillos tipicos, 
+                estarás conociendo un poco más de la historia y la cultura de su lugar de origen.</p>
+            </div>
+            
+            
+            
+            </div>  
+           </div>
+          
+
+       <div class="item-video">
+         <div><h4 class="texto"><strong>Gastronomia Mexicana </strong></h4></div>
+           <div class="video"><iframe width="556" height="467" src="https://www.youtube.com/embed/rYYJYSpP3bI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          </div>
+   
+          <div><h5 class="texto"><strong>Feria Nacional de la Gastronomia Mexicana </strong></h5></div>
+      
+          <div class="item-precios">
+       
+        <article class="coteiner-feria" style="background-color:#cca999;">
+        <span class="service-num">1</span>
+        <article class="service-txt">
+        <p > Gastronomia del Norte<br><hr>
+        <p >Reservaciones <br> Restaurantes participantes <br> Tel:55-367-87-90 </p>
+        </article>
+      </article> 
+      <article class="coteiner-feria" style="background-color: #ac806c;">
+        <span class="service-num">2</span>
+        <article class="service-txt">
+          <p > Gastronomia del Centro<br><hr>
+          <p >Reservaciones <br> Restaurantes participantes <br> Tel:55-367-87-91 </p>
+          </article>
+        </article>
+        <article class="coteiner-feria" style="background-color: #8f6755;">
+        <span class="service-num">3</span>
+        <article class="service-txt">
+          <p > Gastronomia del Sur<br><hr>
+          <p >Reservaciones <br> Restaurantes participantes <br> Tel:55-367-87-92 </p>
+          </article>
+        </article>
+      
+    </div>
+    
+    </div>
+
+  </body>
+</html>
